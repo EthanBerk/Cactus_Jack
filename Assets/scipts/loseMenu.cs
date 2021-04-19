@@ -1,0 +1,17 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class loseMenu : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.R)){
+            restart();
+        }
+    }
+    public void restart(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+}
